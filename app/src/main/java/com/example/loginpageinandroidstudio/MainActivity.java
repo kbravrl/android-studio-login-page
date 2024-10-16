@@ -3,35 +3,29 @@ package com.example.loginpageinandroidstudio;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.Button;
-import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.loginpageinandroidstudio.databinding.ActivityMainBinding;
+import com.google.android.material.snackbar.Snackbar;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText username;
-    EditText password;
-    Button loginButton;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        binding = ActivityMainBinding.inflate(getLayoutInflater());
 
-        username = findViewById(R.id.username);
-        password = findViewById(R.id.password);
-        loginButton = findViewById(R.id.loginButton);
+        setContentView(binding.getRoot());
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
+        binding.loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if(username.getText().toString().equals("user") && password.getText().toString().equals("1234")){
-                    Toast.makeText(MainActivity.this, "Login Succesfully", Toast.LENGTH_SHORT).show();
+                if(binding.username.getText().toString().equals("user") && binding.password.getText().toString().equals("1234")){
+                    Snackbar.make(view, "Login Succesfully", Snackbar.LENGTH_SHORT).show();
                 } else {
-                    Toast.makeText(MainActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                    Snackbar.make(view, "Login Failed", Snackbar.LENGTH_SHORT).show();
                 }
 
 
