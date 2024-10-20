@@ -12,7 +12,7 @@ This is a simple login application built using Android Studio. It provides a use
 ## Technologies Used
 
 - Android Studio
-- Java
+- Java Development Kit (JDK)
 - XML for UI design
 
 [android-studio-login-page.webm](https://github.com/user-attachments/assets/5f734b55-40c1-4767-8fac-8d25177e3354)
