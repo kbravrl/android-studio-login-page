@@ -1,18 +1,18 @@
 # android-studio-login-page
 
-This is a simple login application built using Android Studio. It provides a user-friendly interface for users to enter their credentials and log in. The app validates the username and password, providing appropriate feedback based on the input.
+Android Studio kullanılarak oluşturulmuş basit bir oturum açma uygulamasıdır. Kullanıcıların kimlik bilgilerini girmeleri ve oturum açmaları için kullanıcı dostu bir arayüz sunar. Uygulama, kullanıcı adı ve parolayı doğrular ve girdiye göre uygun geri bildirim sağlar.
 
-## Features
+## Özellikler
 
-- User-friendly login interface
-- Input validation for username and password
-- Feedback messages for successful and failed login attempts
-- Placeholder for future sign-up functionality
+- Kullanıcı dostu oturum açma arayüzü
+- Kullanıcı adı ve parola için giriş doğrulama
+- Başarılı ve başarısız oturum açma girişimleri için geri bildirim mesajları
+- Gelecekteki kayıt işlevleri için yer tutucu
 
-## Technologies Used
+## Kullanılan Teknolojiler
 
 - Android Studio
-- Java Development Kit (JDK)
-- XML for UI design
+- Java Geliştirme Kiti (JDK)
+- Kullanıcı arayüzü tasarımı için XML
 
 [android-studio-login-page.webm](https://github.com/user-attachments/assets/5f734b55-40c1-4767-8fac-8d25177e3354)
